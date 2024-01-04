@@ -1,0 +1,807 @@
+/* Common */
+@font-face {
+  font-family: "NotoSansKR-Regulur";
+  src: url("../font//NotoSansKR-Regular.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn-blue  {
+  background-color: #1c69d4;
+  font-size: 16px;
+}
+.btn-blue:hover {
+  background-color: rgb(26, 75, 169);
+}
+.btn-default {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  border: 1px solid #fff;
+}
+.btn-default:hover {
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* main */
+.container .m-main {
+  display: none;
+} 
+.container .main {
+  background-image: url("../img/home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1920px;
+  height: 1080px;
+  position: relative;
+  margin: auto;
+}
+.container .main .navbar {
+  height: 88px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: 1.5px solid #fff;
+  border-radius: 0px;
+}
+.container .main .navbar > img {
+  width: 54px;
+  height: 54px;
+}
+.container .main .navbar .nav > li {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 12px;
+  height: 86px;
+  line-height: 87px;
+}
+.container .main .navbar .nav > li:first-child {
+  margin-left:0;
+}
+.container .main .navbar .nav > .left-items:not(:first-child):hover {
+  border-bottom: 3px solid blue;
+  cursor: pointer;
+}
+.container .main .navbar .nav > .right-items:hover {
+  border-bottom: 3px solid blue;
+  cursor: pointer;
+} 
+
+.container .main .slogan {
+  margin-left: 5%;
+  font-size: 17px;
+  font-weight: 300;
+  color: #fff;
+  display: block;
+  height: 40px;
+}
+.container .main .shadow {
+  width: 100%;
+  height: 128px;
+  background: linear-gradient(0deg, #0000, #0006);
+}
+.container .main .promotion {
+  position: absolute;
+  bottom: 35px;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+.container .main .promotion > p {
+  color: #fff;
+}
+.container .main .promotion > p:nth-child(1) {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.container .main .promotion > p:nth-child(2) {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.container .main .promotion > p:nth-child(3) {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.container .main .promotion .btn {
+  width: 264px;
+  height: 52px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+/* favorite */
+.container-fluid {
+  text-align: center;
+  margin: auto;
+}
+.container-fluid > p {
+  color: rgb(116, 116, 116);
+  margin: 30px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing:3px;
+}
+.container-fluid > h2 {
+  font-size: 70px;
+  font-weight: 400;
+}
+.container-fluid .link-box {
+  max-width: 1920px;
+  margin: auto;
+}
+.container-fluid .link-box .box {
+  margin: auto;
+  width: 576px;
+  height: 355px;
+  padding: 0;
+}
+.container-fluid .link-box .box > img{
+  width: 552px;
+  height: 193px;
+  box-sizing: contain;
+  background-position: center;
+}
+.container-fluid .link-box .box > p {
+  font-size: 20px;
+}
+.container-fluid .link-box .box > .btn-box {
+  width: 105px;
+  height: 52px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.container-fluid .link-box .box > .btn-box:hover {
+  border: 3px solid black;
+}
+
+
+/* XM intro */
+.container-fluid .xm {
+  width: 1920px;
+  height: 640px;
+  background-image: url("../img/bmw-xm-pc.jpg");
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: start;
+}
+.container-fluid .xm .xm-info {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container-fluid .xm .xm-info .xm-board {
+  top: 25%;
+  left: 5%;
+  position: absolute;
+}
+.container-fluid .xm .xm-info .xm-board > .xm-img {
+  width: 200px;
+  height: 70px;
+  background-image: url("../img/BMW_M_100px.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.container-fluid .xm .xm-info .xm-board > .xm-font {
+  display: inline-block;
+  font-size: 68px;
+  color: #fff;
+  margin-left: 30px;
+  font-weight: 300;
+}
+.container-fluid .xm .xm-info .xm-board > .btn-xm {
+  width: 408px;
+  height: 52px;
+}
+
+.container-fluid .xm .xm-info .xm-board .btn-xm > .btn-xm-benefit {
+  width: 408px;
+  height: 52px;
+  margin-top: 50px;
+  background-color: #1c69d4;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+.container-fluid .xm .xm-info .xm-board .btn-xm > .btn-xm-benefit:hover {
+  background-color: rgb(26, 75, 169);
+}
+.container-fluid .xm .xm-info .xm-board .btn-xm > .btn-xm-info {
+  width: 408px;
+  height: 52px;
+  margin-top: 30px;
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: 700;
+  font-size: 16px;
+  border: 1px solid #fff;
+}
+.container-fluid .xm .xm-info .xm-board .btn-xm > .btn-xm-info:hover {
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+.container > .blank {
+  width: 100%;
+  height: 50px;
+}
+
+/* IX3 intro */
+.container-fluid .ix3-shadow .ix3 {
+  width: 1920px;
+  height: 640px;
+  background: linear-gradient(290deg, #00000000, rgba(0, 0, 0, 0.4)), url("../img/BMW-Service-pc.jpg");
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: start;
+}
+.container-fluid .ix3 > .ix3-info {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container-fluid .ix3 .ix3-info .ix3-board {
+  top: 25%;
+  left: 5%;
+  position: absolute;
+}
+
+.container-fluid .ix3 .ix3-info .ix3-board > .ix3-model {
+  font-size: 68px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+.container-fluid .ix3 .ix3-info .ix3-board > .ix3-promotion {
+  font-size: 48px;
+  margin-bottom: 0;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: #fff;
+}
+.container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 .btn-ix3-info,
+.container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 .btn-ix3-benefit {
+  display: block;
+  width: 408px;
+  height: 52px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+}
+.container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 > .btn-ix3-info {
+  background-color: #1c69d4;
+  border: 0;
+  outline: 0;
+  margin-top: 10px;
+}
+.container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 > .btn-ix3-info:hover {
+  background-color: rgb(26, 75, 169);
+}
+.container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 > .btn-ix3-benefit {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  margin-top: 30px;
+}
+.container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 > .btn-ix3-benefit:hover {
+  border: 3px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* BMW-finance */
+.container-fluid .bmw-finance {
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+}
+.container-fluid .bmw-finance .bmw-finance-img  {
+  padding:0;
+  width: 840px;
+  margin-left: 5%;
+}
+.container-fluid .bmw-finance .bmw-finance-img > img {
+  width: 840px;
+  height: 473px;
+  padding: 0;
+}
+.container-fluid .bmw-finance .bmw-finance-img > img:nth-child(2) {
+  display: none;
+}
+.container-fluid .bmw-finance .bmw-finance-board {
+  text-align: left;
+} 
+.container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > p:first-child {
+  margin-top: 8%;
+  color: #666666;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > p:nth-child(2) {
+  font-size: 68px;
+  font-weight: 400;
+  color: #262626;
+}
+.container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > p:nth-child(3) {
+  color: #262626;
+  font-weight: 400;
+  font-size: 16px;
+} 
+.container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > button {
+  width: 264px;
+  height: 52px;
+  color: #262626;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  margin-top: 40px;
+  outline: 0;
+  border: 0;
+  border: 1.5px solid black;
+  font-weight: 900;
+  font-size: 17px;
+}
+.container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > button:hover {
+  border: 3px solid black;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  top: 40px;
+} 
+.footer > .info-bg {
+  background-color: rgb(245, 245, 245);
+  padding: 0;
+}
+.footer .info-bg > .info {
+  padding: 0;
+  max-width: 1728px;
+}
+.footer .info-bg .info p {
+  margin-top: 70px;
+  margin-bottom: 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.footer .info-bg .info span {
+  display: block;
+  text-align: left;
+  margin-bottom: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #4d4d4d;
+}
+.footer .info-bg .info span:hover {
+  color: black;
+}
+.footer .info-bg .info .bmw-group {
+  padding: 0;
+}
+.footer .info-bg .info-m {
+  display: none;
+}
+.footer .pGuide {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.footer .pGuide .bmw-pInfo {
+  text-align: left;
+  margin-left: 5%;
+}
+.footer .pGuide .bmw-pInfo > span {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-position : under;
+  text-underline-offset : 0.px;
+  text-decoration-color:#666666;
+  cursor: pointer;
+}
+.footer .pGuide .bmw-pInfo > span:hover {
+  color: #1c69d4;
+}
+.footer .pGuide .bmw-pInfo > .vertical-line {
+  display: inline-block;
+}
+.footer .pGuide .bmw-sns {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.footer .pGuide .bmw-sns > img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.footer .outro {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 115px;
+  line-height: 115px;
+}
+.footer .outro .outro-left {
+  display: inline-block;
+  margin-left: 5%;
+  font-size: 13px;
+  font-weight: 200;
+}
+.footer .outro .outro-right {
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+.footer .outro .outro-right > span {
+  margin: 0 12px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.footer .outro .outro-right > span:hover {
+  color: #1c69d4;
+}
+
+
+/* mobile*/
+/* .m-logomain */
+@media screen and (min-width: 400px) and (max-width:767px) {
+  .container {
+    max-width: 767px;
+    margin: 0 auto;
+  }
+  .container-fluid {
+    max-width: 767px;
+    margin: 0 auto;
+  }
+  .container .main {
+    display: none;
+  }
+  .container .m-main {
+    background-image: url("../img/home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 767px;
+    height: 660px;
+    position: relative;
+    display: block;
+  }
+  .m-main .shadow {
+    height: 90px;
+    background: linear-gradient(0deg, #0000, #0006);
+  }
+  .m-main .shadow .navbar .m-logo,
+  .m-main .shadow .navbar .m-menu {
+    display: inline-block;
+    height: 67px;
+    margin: auto 0;
+  }
+  .m-main .shadow .navbar {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .m-main .shadow .navbar .m-logo > img {
+    width: 36px;
+    height: 67px;
+  }
+  .m-main .shadow .navbar .m-menu {
+    display: inline-flex;
+    float: right;
+    cursor: pointer;
+  }
+  .m-main .shadow .navbar .m-menu > p {
+    display: block;
+    height: 64px;
+    line-height: 64px;
+  }
+  .m-main .shadow .navbar .m-menu > p:hover {
+    border-bottom: 3px solid blue;
+  }
+  .m-main .shadow .navbar .m-menu > p:nth-child(4):hover {
+    border: 0;
+  }
+  .m-main .shadow .navbar .m-menu > p {
+    color: #fff;
+    margin-left: 30px;
+    font-size: 18px;
+    margin: auto 0 auto 30px;
+  }
+  .m-main .m-promotion {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .m-main .m-promotion > p {
+    color: #fff;
+    text-align: center;
+  }
+  .m-main .m-promotion p:nth-child(1) {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3.5px;
+    margin-bottom: 3px;
+  }
+  .m-main .m-promotion p:nth-child(2) {
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 3px;
+  }
+  .m-main .m-promotion p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin-bottom: 30px;
+  }
+  .m-main .m-promotion > button {
+    display: block;
+    margin: auto;
+    width : 646px;
+    height: 52px;
+  }
+  .m-main .m-promotion .btn-blue {
+    background-color: #1c69d4;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .m-main .m-promotion .btn-blue:hover {
+    background-color: rgb(26, 75, 169);
+  }
+  .m-main .m-promotion .btn-default {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  /* favorite */
+  .favorite {
+    padding: 0;
+  }
+  .col-sm-4 {
+    padding: 0;
+  }
+  .container-fluid > p {
+    margin-bottom: 10px;
+  }
+  .container-fluid > h2 {
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 0px;
+  }
+  .container-fluid .link-box .box {
+    margin:auto;
+  }
+  .container-fluid .link-box .box > img{
+    height: 239px;
+    margin: auto;
+  }
+  .container-fluid .link-box .box > p  {
+    margin-left: 12%;
+    font-size: 16px;
+    margin-bottom: 6%;
+    margin: auto;
+  }
+  .container-fluid .link-box .box > .btn-box {
+    display: block;
+    width : 600px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .container-fluid .link-box .box-last {
+    margin-bottom: 30px;
+  }
+
+  /* xm intro */
+  .container-fluid .xm {
+    width: 710px;
+    height: 770px;
+    background-image:url("../img/bmw-xm-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .container-fluid .xm .xm-info .xm-board {
+    top: 530px;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+  .container-fluid .xm .xm-info .xm-board > .xm-img {
+    width: 100px;
+    height: 35px;
+  }
+  .container-fluid .xm .xm-info .xm-board > .xm-font{
+    font-size: 35px;
+    margin-left: 20px;
+  }
+
+  .container-fluid .xm .xm-info .xm-board .btn-xm {
+    width: 710px;
+  }
+  .container-fluid .xm .xm-info .xm-board .btn-xm > .btn-xm-benefit {
+    margin-top: 20px;
+    width : 646px;
+    height: 52px;
+    margin: auto;
+  }
+  .container-fluid .xm .xm-info .xm-board .btn-xm > .btn-xm-info {
+    width : 646px;
+    height: 52px;
+  }
+
+  /* ix3 intro */
+  .container > .blank {
+    width: 100%;
+    height: 30px;
+  }
+
+  .container-fluid .ix3-shadow .ix3 {
+    width: 710px;
+    height: 770px;
+    background: linear-gradient(180deg, #00000000, rgba(0, 0, 0, 0.4)), url("../img/BMW-Service-homepage_1to1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
+  .container-fluid .ix3 .ix3-info {
+    margin: 0 auto;
+  }
+  .container-fluid .ix3 .ix3-info .ix3-board {
+    top: 510px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0;
+    text-align: center;
+  }
+  .container-fluid .ix3 .ix3-info .ix3-board > .ix3-model {
+    font-size: 35px;
+    font-weight: 300;
+  }
+  .container-fluid .ix3 .ix3-info .ix3-board > .ix3-promotion {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  .container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 .btn-ix3-info,
+  .container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 .btn-ix3-benefit {
+    width : 646px;
+    height: 52px;
+  }
+  .container-fluid .ix3 .ix3-info .ix3-board .btn-ix3 .btn-ix3-benefit {
+    margin-top: 10px;
+  }
+
+  /* finance */
+  .container-fluid .bmw-finance .bmw-finance-img {
+    left: 0;
+  }
+  .container-fluid .bmw-finance .bmw-finance-img > img:nth-child(1) {
+    display: none;
+  }
+  .container-fluid .bmw-finance .bmw-finance-img > img:nth-child(2) {
+    display: block;
+    width : 646px;
+    height: 372px;
+    box-sizing: border-box;
+  }
+  .container-fluid .bmw-finance .bmw-finance-board {
+    padding: 0;
+    padding-left: 5%;
+  }
+  .container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > p:first-child {
+    margin-bottom: 0;
+  }
+  .container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > p:nth-child(2) {
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 3px;
+  }
+  .container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > p:nth-child(3) {
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .container-fluid .bmw-finance .bmw-finance-board .bmw-finance-board-font > button {
+    width : 646px;
+    height: 52px;
+  }
+  
+  /* footer */
+  .footer .info-bg .info {
+    display: none;
+  }
+  .footer .info-bg .info-m {
+    display: block;
+  } 
+  .footer .info-bg .info-m .bmw-group > .show-bmw-group {
+    margin-top: 50px;
+  }
+  .footer .info-bg .info-m .bmw-group > .show-bmw-group, 
+  .footer .info-bg .info-m .bmw-law > .show-bmw-law, 
+  .footer .info-bg .info-m .bmw-channel > .show-bmw-channel, 
+  .footer .info-bg .info-m .bmw-biz > .show-bmw-biz {
+    text-align: left;
+    margin-left: 11%;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .footer .info-bg .info-m .bmw-group .show-bmw-group > .status, 
+  .footer .info-bg .info-m .bmw-law .show-bmw-law > .status, 
+  .footer .info-bg .info-m .bmw-channel .show-bmw-channel > .status, 
+  .footer .info-bg .info-m .bmw-biz .show-bmw-biz > .status {
+    float: right;
+    margin-right: 10%;
+  }
+  .footer .info-bg .info-m .bmw-group > .visible-bmw-group, 
+  .footer .info-bg .info-m .bmw-law > .visible-bmw-law, 
+  .footer .info-bg .info-m .bmw-channel > .visible-bmw-channel, 
+  .footer .info-bg .info-m .bmw-biz > .visible-bmw-biz {
+    display: none;
+    text-align: left;
+    margin-left: 15%;
+    font-weight: 700;
+    cursor: pointer;
+  } 
+  .footer .pGuide {
+    margin-left: 10%;
+  }
+
+  .footer .outro {
+    margin: 0 auto;
+    height: 80px;
+    line-height: 80px;
+  }
+  .footer .outro .outro-left  {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+  .footer .outro .outro-right {
+    display: block;
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+}
